@@ -11,7 +11,7 @@ const Countdown = () => {
   });
 
   useEffect(() => {
-    const weddingDate = new Date('2026-08-24T16:00:00');
+    const weddingDate = new Date('2026-06-24T12:15:00');
 
     const updateCountdown = () => {
       const now = new Date();
@@ -47,9 +47,8 @@ const Countdown = () => {
 
       <div ref={ref} className="max-w-4xl mx-auto px-6 text-center">
         <div
-          className={`transition-all duration-1000 ${
-            isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}
+          className={`transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
         >
           <p className="font-body text-sm tracking-[0.4em] uppercase text-gold-600 mb-3">
             Counting Down To
@@ -64,11 +63,10 @@ const Countdown = () => {
           {timeUnits.map((unit, index) => (
             <div
               key={unit.label}
-              className={`transition-all duration-700 ${
-                isInView
-                  ? 'opacity-100 translate-y-0'
-                  : 'opacity-0 translate-y-12'
-              }`}
+              className={`transition-all duration-700 ${isInView
+                ? 'opacity-100 translate-y-0'
+                : 'opacity-0 translate-y-12'
+                }`}
               style={{ transitionDelay: `${index * 150 + 300}ms` }}
             >
               <div className="glass-card rounded-2xl p-6 md:p-8 elegant-border">
@@ -84,9 +82,8 @@ const Countdown = () => {
         </div>
 
         <div
-          className={`mt-12 transition-all duration-1000 delay-700 ${
-            isInView ? 'opacity-100' : 'opacity-0'
-          }`}
+          className={`mt-12 transition-all duration-1000 delay-700 ${isInView ? 'opacity-100' : 'opacity-0'
+            }`}
         >
           <p className="font-sans italic text-gray-500 text-lg">
             "Two souls, one heart — forever intertwined"

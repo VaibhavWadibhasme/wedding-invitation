@@ -23,18 +23,17 @@ const Navbar = () => {
   return (
     <nav
       id="navbar"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
           ? 'bg-cream-50/95 backdrop-blur-lg shadow-md py-3'
           : 'bg-transparent py-6'
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a
           href="#home"
           className="font-script text-2xl text-gold-600 hover:text-gold-700 transition-colors"
         >
-          A & J
+          V & H
         </a>
 
         {/* Desktop Navigation */}
@@ -59,28 +58,24 @@ const Navbar = () => {
           aria-label="Toggle mobile menu"
         >
           <span
-            className={`w-6 h-px bg-gold-600 transition-all duration-300 ${
-              isOpen ? 'rotate-45 translate-y-[4px]' : ''
-            }`}
+            className={`w-6 h-px bg-gold-600 transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-[4px]' : ''
+              }`}
           />
           <span
-            className={`w-6 h-px bg-gold-600 transition-all duration-300 ${
-              isOpen ? 'opacity-0' : ''
-            }`}
+            className={`w-6 h-px bg-gold-600 transition-all duration-300 ${isOpen ? 'opacity-0' : ''
+              }`}
           />
           <span
-            className={`w-6 h-px bg-gold-600 transition-all duration-300 ${
-              isOpen ? '-rotate-45 -translate-y-[4px]' : ''
-            }`}
+            className={`w-6 h-px bg-gold-600 transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-[4px]' : ''
+              }`}
           />
         </button>
       </div>
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden absolute top-full left-0 right-0 bg-cream-50/98 backdrop-blur-xl transition-all duration-500 overflow-hidden ${
-          isOpen ? 'max-h-96 border-b border-gold-200/30' : 'max-h-0'
-        }`}
+        className={`md:hidden absolute top-full left-0 right-0 bg-cream-50/98 backdrop-blur-xl transition-all duration-500 overflow-hidden ${isOpen ? 'max-h-96 border-b border-gold-200/30' : 'max-h-0'
+          }`}
       >
         <div className="flex flex-col items-center py-6 gap-5">
           {navLinks.map((link) => (

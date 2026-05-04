@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="mb-8">
           <div className="inline-flex items-center gap-3">
             <span className="w-12 h-px bg-gold-400/40" />
-            <span className="font-script text-4xl gold-text">A & J</span>
+            <span className="font-script text-4xl gold-text">V & H</span>
             <span className="w-12 h-px bg-gold-400/40" />
           </div>
         </div>
@@ -27,32 +27,20 @@ const Footer = () => {
         {/* Date */}
         <div className="glass-card rounded-2xl inline-block px-8 py-4 mb-10">
           <p className="font-serif text-lg text-gold-700 tracking-wider">
-            August 24, 2026
+            June 24, 2026
           </p>
           <p className="font-body text-xs text-gray-400 mt-1">
-            Rosewood Garden Estate · Cotswolds, England
+            Radha Krushna Hall · Mauda, Nagpur
           </p>
         </div>
 
-        {/* Contact */}
-        <div className="mb-10">
-          <p className="font-body text-xs tracking-[0.2em] uppercase text-gray-400 mb-2">
-            For any questions
-          </p>
-          <a
-            href="mailto:wedding@ameliaandjames.com"
-            className="font-body text-sm text-gold-600 hover:text-gold-700 transition-colors underline underline-offset-4 decoration-gold-300/50"
-          >
-            wedding@ameliaandjames.com
-          </a>
-        </div>
 
         {/* Hashtag */}
         <div className="mb-10">
           <p className="font-body text-xs tracking-[0.2em] uppercase text-gray-400 mb-2">
             Share your moments
           </p>
-          <p className="font-serif text-xl text-gold-600">#AmeliaAndJamesForever</p>
+          <p className="font-serif text-xl text-gold-600">#VaibhavAndHimanshaForever</p>
         </div>
 
         {/* Divider */}
@@ -60,7 +48,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <p className="font-body text-xs text-gray-400">
-          Made with ♥ — Amelia & James · 2026
+          Made with ♥ — Vaibhav & Himansha · 2026
         </p>
       </div>
     </footer>

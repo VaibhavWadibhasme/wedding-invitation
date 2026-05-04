@@ -5,39 +5,11 @@ const OurStory = () => {
 
   const timeline = [
     {
-      date: 'June 2020',
+      date: 'May 2026',
       title: 'First Meeting',
       description:
-        'We met at a cozy coffee shop on a rainy Sunday afternoon. What started as a chance encounter turned into hours of conversation and laughter.',
+        'We Met at her home. It was love at first sight. I knew i was going to marry her that day. My parents were there too, and they loved her too. Her parents were also there and they loved me too. It was a match made in heaven.',
       icon: '☕',
-    },
-    {
-      date: 'December 2020',
-      title: 'First Date',
-      description:
-        'A candlelit dinner at a rooftop restaurant overlooking the city lights. That night, we both knew something magical had begun.',
-      icon: '🌟',
-    },
-    {
-      date: 'August 2022',
-      title: 'Moved In Together',
-      description:
-        'We took the leap and built our first home together — a cozy apartment filled with love, laughter, and far too many houseplants.',
-      icon: '🏡',
-    },
-    {
-      date: 'February 2025',
-      title: 'The Proposal',
-      description:
-        'On a sunset walk along the beach, James got down on one knee. Through tears of joy, Amelia said "Yes!" before he could even finish asking.',
-      icon: '💍',
-    },
-    {
-      date: 'August 2026',
-      title: 'The Wedding',
-      description:
-        'The beginning of our forever. We cannot wait to celebrate this special day surrounded by the people we love most.',
-      icon: '💒',
     },
   ];
 
@@ -57,9 +29,8 @@ const OurStory = () => {
       <div ref={ref} className="max-w-5xl mx-auto px-6">
         {/* Section Header */}
         <div
-          className={`text-center mb-20 transition-all duration-1000 ${
-            isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}
+          className={`text-center mb-20 transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
         >
           <p className="font-body text-sm tracking-[0.4em] uppercase text-gold-600 mb-3">
             How It All Began
@@ -78,18 +49,16 @@ const OurStory = () => {
           {timeline.map((event, index) => (
             <div
               key={index}
-              className={`relative flex flex-col md:flex-row items-center mb-16 last:mb-0 transition-all duration-700 ${
-                isInView
-                  ? 'opacity-100 translate-y-0'
-                  : 'opacity-0 translate-y-12'
-              }`}
+              className={`relative flex flex-col md:flex-row items-center mb-16 last:mb-0 transition-all duration-700 ${isInView
+                ? 'opacity-100 translate-y-0'
+                : 'opacity-0 translate-y-12'
+                }`}
               style={{ transitionDelay: `${index * 200 + 400}ms` }}
             >
               {/* Left content (even items) */}
               <div
-                className={`w-full md:w-5/12 ${
-                  index % 2 === 0 ? 'md:text-right md:pr-12' : 'md:order-3 md:pl-12'
-                }`}
+                className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:text-right md:pr-12' : 'md:order-3 md:pl-12'
+                  }`}
               >
                 <div className="glass-card rounded-2xl p-8 hover:shadow-lg transition-shadow duration-500">
                   <p className="font-body text-xs tracking-[0.3em] uppercase text-gold-600 mb-2">
@@ -113,9 +82,8 @@ const OurStory = () => {
 
               {/* Right content (odd items) */}
               <div
-                className={`w-full md:w-5/12 ${
-                  index % 2 === 0 ? 'md:order-3' : ''
-                }`}
+                className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:order-3' : ''
+                  }`}
               />
             </div>
           ))}

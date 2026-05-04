@@ -5,10 +5,26 @@ const Events = () => {
 
   const events = [
     {
-      title: 'The Ceremony',
-      time: '4:00 PM',
-      venue: 'Rosewood Garden Estate',
-      address: '142 Blossom Lane, Cotswolds, England',
+      title: 'Haldi Ceremony',
+      time: '7:30 PM',
+      venue: 'At our home',
+      address: '116 Ward No.4, Behind Mahajan Building, Mandhal, Nagpur, Maharashtra 441210',
+      description:
+        'Enjoy Haldi Ceremony with us',
+      icon: (
+        <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+          <path d="M8 2L16 2L13 10H11L8 2Z" />
+          <path d="M12 10V18" />
+          <path d="M8 18H16" />
+        </svg>
+      ),
+      image: '/images/gallery-1.png',
+    },
+    {
+      title: 'The Warmala',
+      time: '12:15 PM',
+      venue: 'Radha Krushna Hall',
+      address: 'Main Road, Mouda, behind Bus Stand, Nagpur, Maharashtra 441104',
       description:
         'Join us as we exchange our vows in a beautiful garden ceremony surrounded by nature and the people we love.',
       icon: (
@@ -20,29 +36,14 @@ const Events = () => {
       ),
       image: '/images/venue-ceremony.png',
     },
-    {
-      title: 'Cocktail Hour',
-      time: '5:30 PM',
-      venue: 'The Orangery Terrace',
-      address: 'Rosewood Garden Estate',
-      description:
-        'Enjoy artisanal cocktails and canapés while taking in the breathtaking views of the estate\'s manicured gardens.',
-      icon: (
-        <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M8 2L16 2L13 10H11L8 2Z" />
-          <path d="M12 10V18" />
-          <path d="M8 18H16" />
-        </svg>
-      ),
-      image: '/images/gallery-1.png',
-    },
+
     {
       title: 'The Reception',
       time: '7:00 PM',
-      venue: 'The Grand Ballroom',
-      address: 'Rosewood Garden Estate',
+      venue: 'Ram Mandir Hall',
+      address: 'Near Zilha Parishad High School and Junior College Mandhal taluka, Kuhi, Maharashtra 441210',
       description:
-        'Dinner, dancing, and celebration under the stars. Let us eat, drink, and be married!',
+        'Dinner, dancing, and celebration under the stars.',
       icon: (
         <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <circle cx="12" cy="12" r="10" />
@@ -60,9 +61,8 @@ const Events = () => {
       <div ref={ref} className="max-w-6xl mx-auto px-6">
         {/* Section Header */}
         <div
-          className={`text-center mb-20 transition-all duration-1000 ${
-            isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}
+          className={`text-center mb-20 transition-all duration-1000 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
         >
           <p className="font-body text-sm tracking-[0.4em] uppercase text-gold-600 mb-3">
             Join Us In Celebration
@@ -78,11 +78,10 @@ const Events = () => {
           {events.map((event, index) => (
             <div
               key={index}
-              className={`group transition-all duration-700 ${
-                isInView
-                  ? 'opacity-100 translate-y-0'
-                  : 'opacity-0 translate-y-12'
-              }`}
+              className={`group transition-all duration-700 ${isInView
+                ? 'opacity-100 translate-y-0'
+                : 'opacity-0 translate-y-12'
+                }`}
               style={{ transitionDelay: `${index * 200 + 400}ms` }}
             >
               <div className="glass-card rounded-2xl overflow-hidden h-full elegant-border hover:shadow-xl transition-all duration-500 hover:-translate-y-2">
@@ -127,9 +126,8 @@ const Events = () => {
 
         {/* Dress Code */}
         <div
-          className={`mt-16 text-center glass-card rounded-2xl p-8 max-w-2xl mx-auto elegant-border transition-all duration-1000 delay-700 ${
-            isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}
+          className={`mt-16 text-center glass-card rounded-2xl p-8 max-w-2xl mx-auto elegant-border transition-all duration-1000 delay-700 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
         >
           <h3 className="font-serif text-xl text-gray-800 mb-2">Dress Code</h3>
           <p className="font-body text-sm text-gray-500">
